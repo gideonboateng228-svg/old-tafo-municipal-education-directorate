@@ -10,11 +10,9 @@
     <header>
         <div class="logo">
             <!-- Placeholder for logo; replace with actual image path -->
-            <img src="logo.png"logo. alt="Old Tafo Municipal Education Directorate Logo">
-            
+            <img src="logo.png" alt="Old Tafo Municipal Education Directorate Logo">
         </div>
-        <div class = "title"><h2>Old Tafo Municipal Education Directorate</h2></div>
-        
+        <h1>Old Tafo Municipal Education Directorate</h1>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -28,75 +26,183 @@
         </nav>
     </header>
 
-    <main>
-        <section id="home">
-            <p>Welcome to the official platform for the Old Tafo Municipal Education Directorate.</p>
-        </section>
+    <div class="content-wrapper">
+        <main>
+            <section id="home">
+                <p>Welcome to the official platform for the Old Tafo Municipal Education Directorate.</p>
+            </section>
 
-        <section id="departments">
-            <h2>Number of Departments</h2>
-            <p>There are 4 departments in the office:</p>
-            <ul>
-                <li>Human Resource Department</li>
-                <li>Finance and Administration</li>
-                <li>Planning and Statistics</li>
-                <li>Monitoring and Inspectorate</li>
-            </ul>
-        </section>
+            <section id="departments">
+                <h2>Our Departments</h2>
+                <p>Explore the four key departments that drive our educational mission.</p>
+                <div class="tab-container">
+                    <div class="tab-buttons">
+                        <button class="tab-button active" data-tab="hr">Human Resource</button>
+                        <button class="tab-button" data-tab="finance">Finance and Administration</button>
+                        <button class="tab-button" data-tab="planning">Planning and Statistics</button>
+                        <button class="tab-button" data-tab="monitoring">Monitoring and Inspectorate</button>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="hr">
+                            <img src="human resource.jpg" alt="Human Resource Department">
+                            <h3>Human Resource Department</h3>
+                            <p>Manages staff recruitment, training, and welfare.</p>
+                            <button class="dropdown-toggle">View Roles</button>
+                            <div class="dropdown-content" style="display: none;">
+                                <ul>
+                                    <li>HR Manager</li>
+                                    <li>Training Coordinator</li>
+                                    <li>Recruitment Officer</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="finance">
+                            <img src="finance.jpg" alt="Finance and Administration Department">
+                            <h3>Finance and Administration</h3>
+                            <p>Oversees budgeting, accounting, and administrative functions.</p>
+                            <button class="dropdown-toggle">View Roles</button>
+                            <div class="dropdown-content" style="display: none;">
+                                <ul>
+                                    <li>Chief Accountant</li>
+                                    <li>Administrative Officer</li>
+                                    <li>Budget Analyst</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="planning">
+                            <img src="statistics.jpg" alt="Planning and Statistics Department">
+                            <h3>Planning and Statistics</h3>
+                            <p>Handles educational planning and data analysis.</p>
+                            <button class="dropdown-toggle">View Roles</button>
+                            <div class="dropdown-content" style="display: none;">
+                                <ul>
+                                    <li>Planning Officer</li>
+                                    <li>Data Analyst</li>
+                                    <li>Statistics Coordinator</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="monitoring">
+                            <img src="teachers_workshop.jpg" alt="Monitoring and Inspectorate Department">
+                            <h3>Monitoring and Inspectorate</h3>
+                            <p>Ensures quality education through school inspections.</p>
+                            <button class="dropdown-toggle">View Roles</button>
+                            <div class="dropdown-content" style="display: none;">
+                                <ul>
+                                    <li>Chief Inspector</li>
+                                    <li>Monitoring Officer</li>
+                                    <li>Quality Assurance Specialist</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        <section id="schools">
-            <h2>Number of Schools</h2>
-            <p>The directorate supervises 38 schools in the municipality.</p>
-        </section>
+            <section id="schools">
+                <h2>Number of Schools</h2>
+                <p>The directorate supervises 38 schools in the municipality.</p>
+            </section>
 
-        <section id="announcements">
-            <h2>Announcements</h2>
-            <p>This section is for admins to post important information, updates, and notices for schools, teachers, and the community.</p>
-            <!-- Admins can update this section statically or via future backend integration -->
-            <div class="announcement">
-                <h3>Latest Update</h3>
-                <p>Example: Upcoming teacher training session on August 20, 2025.</p>
+            <section id="announcements">
+                <h2>Announcements</h2>
+                <p>This section is for admins to post important information, updates, and notices for schools, teachers, and the community.</p>
+                <div class="announcement-slideshow">
+                    <div class="announcement active" data-background="teaching.jpg" data-date="2025-08-20">
+                        <h3>Teacher Training Session</h3>
+                        <p class="short-desc">Upcoming training for teachers on August 20, 2025.</p>
+                        <p class="full-desc" style="display: none;">Join us for a comprehensive training session focusing on modern teaching methodologies. The event will be held at the Municipal Education Office, starting at 9:00 AM.</p>
+                        <button class="read-more">Read More</button>
+                    </div>
+                    <div class="announcement" data-background="school-stationary-background-free-vector.jpg" data-date="2025-09-01">
+                        <h3>School Supplies Donation</h3>
+                        <p class="short-desc">Donation event scheduled for September 1, 2025.</p>
+                        <p class="full-desc" style="display: none;">The Directorate is organizing a donation drive to provide essential school supplies to underprivileged students. Volunteers are welcome to join!</p>
+                        <button class="read-more">Read More</button>
+                    </div>
+                    <div class="announcement" data-background="2-1024x576.jpg" data-date="2025-09-15">
+                        <h3>Annual Education Conference</h3>
+                        <p class="short-desc">Conference set for September 15, 2025.</p>
+                        <p class="full-desc" style="display: none;">This year's conference will focus on inclusive education. Register by September 10 to secure your spot.</p>
+                        <button class="read-more">Read More</button>
+                    </div>
+                    <div class="announcement" data-background="Teacher-Training-Akuapim-South-JHS-Teachers-at-CCP-Training-Workshop.webp" data-date="2025-10-05">
+                        <h3>New Curriculum Workshop</h3>
+                        <p class="short-desc">Workshop on new curriculum, October 5, 2025.</p>
+                        <p class="full-desc" style="display: none;">A workshop to introduce the updated curriculum for the 2025/2026 academic year. All headteachers are required to attend.</p>
+                        <button class="read-more">Read More</button>
+                    </div>
+                    <div class="announcement" data-background="inspection-scheduling-software-workflow-auotmation-canalix-1.jpg" data-date="2025-10-20">
+                        <h3>School Inspection Schedule</h3>
+                        <p class="short-desc">Inspections begin October 20, 2025.</p>
+                        <p class="full-desc" style="display: none;">The Monitoring and Inspectorate Department will conduct inspections across all 38 schools. Ensure compliance with guidelines.</p>
+                        <button class="read-more">Read More</button>
+                    </div>
+                    <div class="announcement" data-background="Children in a reading camp session.jpg" data-date="2025-11-01">
+                        <h3>Community Engagement Program</h3>
+                        <p class="short-desc">Program launch on November 1, 2025.</p>
+                        <p class="full-desc" style="display: none;">A new initiative to involve parents and community members in school activities. Details to be shared at the launch event.</p>
+                        <button class="read-more">Read More</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="gallery">
+                <h2>Gallery</h2>
+                <p>Featuring pictures of donations made by the Municipal Director of Education and other related educational activities.</p>
+                <div class="gallery">
+                    <figure class="gallery-item">
+                        <img src="donation.webp" alt="Donation Event 1">
+                        <figcaption>Donation event at School A</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="donation_2.jpg" alt="Donation by Director">
+                        <figcaption>Director presenting donations</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="teachers_workshop (1).jpg" alt="Educational Activity">
+                        <figcaption>Educational workshop in progress</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section id="feedback">
+                <h2>Teacher Feedback</h2>
+                <p>Teachers, provide your feedback here to help improve our services.</p>
+                <form id="feedback-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                    
+                    <label for="school">School:</label>
+                    <input type="text" id="school" required>
+                    
+                    <label for="message">Feedback Message:</label>
+                    <textarea id="message" required></textarea>
+                    
+                    <button type="submit">Submit Feedback</button>
+                </form>
+            </section>
+        </main>
+
+        <aside id="calendar">
+            <h2>Events Calendar</h2>
+            <div id="calendar-container"></div>
+            <div class="calendar-nav">
+                <button id="prev-month">Previous</button>
+                <span id="month-year"></span>
+                <button id="next-month">Next</button>
             </div>
-        </section>
-
-        <section id="gallery">
-            <h2>Gallery</h2>
-            <p>Featuring pictures of donations made by the Municipal Director of Education and other related educational activities.</p>
-            <div class="gallery">
-                <!-- Placeholders; replace with actual image paths -->
-                <img src="donation.webp" alt="Donation by Director">
-                <img src="2b269b31-a303-4efa-a1ce-b481ed9aeea4-1-1024x683.jpg" alt="Educational Donation">
-                <img src="Ghana-School-1.webp " alt="School Event">
-                <img src="IMG_8846-1024x718.webp" alt="Teacher Workshop">
-            </div>
-        </section>
-
-        <section id="feedback">
-            <h2>Teacher Feedback</h2>
-            <p>Teachers, provide your feedback here to help improve our services.</p>
-            <form id="feedback-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" required>
-                
-                <label for="school">School:</label>
-                <input type="text" id="school" required>
-                
-                <label for="message">Feedback Message:</label>
-                <textarea id="message" required></textarea>
-                
-                <button type="submit">Submit Feedback</button>
-            </form>
-        </section>
-    </main>
+        </aside>
+    </div>
 
     <footer id="contact">
         <div class="contact-info">
             <h3>Contact Information</h3>
             <p>Address: Old Tafo Municipal Education Office, Kumasi, Ghana</p>
-            <p>Phone: +233 548488869</p>
+            <p>Phone: +233 123 456 789</p>
             <p>Email: info@oldtafoeducation.gov.gh</p>
         </div>
         <div class="social-media">
@@ -106,6 +212,8 @@
             <a href="https://instagram.com/oldtafoeducation" target="_blank">Instagram</a>
         </div>
     </footer>
+
+    <button id="back-to-top" title="Back to Top">↑ Top</button>
 
     <script src="script.js"></script>
 </body>
